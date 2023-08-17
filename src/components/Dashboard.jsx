@@ -52,25 +52,24 @@ const Dashboard = () => {
         {Components.map((item, index) => {
           const Element = item.type;
           return (
-            <>
-              <Route
-                path={item.path}
-                element={
-                  <>
-                    <Section key={index}>
-                      <AnimationSection
-                        style={{
-                          animationName:
-                            addanimation === "Out" ? "fadeOutRight" : "",
-                        }}
-                      >
-                        <Element></Element>
-                      </AnimationSection>
-                    </Section>
-                  </>
-                }
-              />
-            </>
+            <Route
+              key={index}
+              path={item.path}
+              element={
+                <>
+                  <Section key={index}>
+                    <AnimationSection
+                      style={{
+                        animationName:
+                          addanimation === "Out" ? "fadeOutRight" : "",
+                      }}
+                    >
+                      <Element></Element>
+                    </AnimationSection>
+                  </Section>
+                </>
+              }
+            />
           );
         })}
       </Routes>

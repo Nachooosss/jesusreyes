@@ -210,32 +210,30 @@ const LinksMenu = () => {
         {IconsMenu.map((Icon, index) => {
           const IconMenu = Icon.type;
           return (
-            <>
-              <div
-                key={index}
-                style={{
-                  display: Icon.display ? "flex" : "none",
-                  width: "40px",
-                  padding: "8px",
-                }}
-                onClick={() => handleLink(Icon)}
-              >
-                <CustomLink
-                  className="IconM animate__animated"
-                  delay={500}
-                  to={Icon.link}
-                  children={
-                    <>
-                      <IconMenu className="Ico"></IconMenu>
-                    </>
-                  }
-                  style={{ color: theme.color.primary }}
-                ></CustomLink>
-                <Tooltiptext className="TooliptextM">
-                  {Icon.txtTooltip}
-                </Tooltiptext>
-              </div>
-            </>
+            <div
+              key={index}
+              style={{
+                display: Icon.display ? "flex" : "none",
+                width: "40px",
+                padding: "8px",
+              }}
+              onClick={() => handleLink(Icon)}
+            >
+              <CustomLink
+                className="IconM animate__animated"
+                delay={500}
+                to={Icon.link}
+                children={
+                  <>
+                    <IconMenu className="Ico"></IconMenu>
+                  </>
+                }
+                style={{ color: theme.color.primary }}
+              ></CustomLink>
+              <Tooltiptext className="TooliptextM">
+                {Icon.txtTooltip}
+              </Tooltiptext>
+            </div>
           );
         })}
       </>

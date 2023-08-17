@@ -38,19 +38,17 @@ const ContactNav = () => {
         {Icons.map((Icon, index) => {
           const IconComponent = Icon.type;
           return (
-            <>
-              <div key={index}>
-                <IconComponent
-                  className="IconContact"
-                  style={{ color: theme.color.primary }}
-                  onClick={() => handleLink(Icon)}
-                ></IconComponent>
-                <Tooltiptext
-                  Setclass="Tooliptext"
-                  txt={Icon.txtTooltip}
-                ></Tooltiptext>
-              </div>
-            </>
+            <div key={index}>
+              <IconComponent
+                className="IconContact"
+                style={{ color: theme.color.primary }}
+                onClick={() => handleLink(Icon)}
+              ></IconComponent>
+              <Tooltiptext
+                Setclass="Tooliptext"
+                txt={Icon.txtTooltip}
+              ></Tooltiptext>
+            </div>
           );
         })}
       </>
