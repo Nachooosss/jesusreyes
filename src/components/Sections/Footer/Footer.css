@@ -1,0 +1,10 @@
+@media screen and (min-width: 320px) {
+  .copyright {
+    font-size: 0.5rem !important;
+  }
+}
+@media screen and (min-width: 540px) {
+  .copyright {
+    font-size: 0.8rem !important;
+  }
+}
