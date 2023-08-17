@@ -1,0 +1,38 @@
+.Glass {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 20%;
+  right: 0;
+  margin: auto;
+  width: 120px;
+  height: 130px;
+  border: 1px solid #76323fb9;
+  border-radius: 20px;
+  box-shadow: 3px 3px 7px 1px #76323f5d;
+  background-color: rgba(207, 207, 207, 0.185);
+  overflow: hidden;
+  background-image: url(../../../media/ifLogo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110px;
+}
+.GlassEffect {
+  width: 25px;
+  height: 130px;
+  background: rgba(255, 255, 255, 0.719);
+  animation-duration: 2.5s;
+  animation-name: Reflection;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes Reflection {
+  from {
+    transform: skewX(45deg) translateX(-100px);
+  }
+
+  to {
+    transform: skewX(45deg) translateX(230px);
+  }
+}
