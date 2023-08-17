@@ -36,12 +36,12 @@ const AnimationSection = styled.div`
   animation-duration: 500ms;
 `;
 const Components = [
-  { type: Header, path: "/" },
-  { type: AboutMe, path: "/AboutMe" },
-  { type: WorkGallery, path: "/WorkGallery" },
-  { type: Timeline, path: "/Timeline" },
-  { type: Skills, path: "/Skills" },
-  { type: Contact, path: "/Contact" },
+  { type: Header, path: "/jesusreyes/" },
+  { type: AboutMe, path: "/jesusreyes/AboutMe" },
+  { type: WorkGallery, path: "/jesusreyes/WorkGallery" },
+  { type: Timeline, path: "/jesusreyes/Timeline" },
+  { type: Skills, path: "/jesusreyes/Skills" },
+  { type: Contact, path: "/jesusreyes/Contact" },
 ];
 const Dashboard = () => {
   const addanimation = useSelector((state) => state.data.AnimationDirection);

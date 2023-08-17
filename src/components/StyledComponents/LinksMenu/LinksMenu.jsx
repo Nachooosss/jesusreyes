@@ -30,19 +30,34 @@ import Dialog from "../Dialog/Dialog";
 import CloseDial from "../Dialog/CloseDial";
 
 const IconsMenu = [
-  { type: Home, link: "/", txtTooltip: "Home", display: true },
-  { type: Person, link: "/AboutMe", txtTooltip: "About me", display: true },
-  { type: Work, link: "/WorkGallery", txtTooltip: "Work", display: true },
-  { type: Timeline, link: "/Timeline", txtTooltip: "Timeline", display: true },
+  { type: Home, link: "/jesusreyes/", txtTooltip: "Home", display: true },
+  {
+    type: Person,
+    link: "/jesusreyes/AboutMe",
+    txtTooltip: "About me",
+    display: true,
+  },
+  {
+    type: Work,
+    link: "/jesusreyes/WorkGallery",
+    txtTooltip: "Work",
+    display: true,
+  },
+  {
+    type: Timeline,
+    link: "/jesusreyes/Timeline",
+    txtTooltip: "Timeline",
+    display: true,
+  },
   {
     type: IntegrationInstructions,
-    link: "/Skills",
+    link: "/jesusreyes/Skills",
     txtTooltip: "Skills",
     display: true,
   },
   {
     type: ContactPhone,
-    link: "/Contact",
+    link: "/jesusreyes/Contact",
     txtTooltip: "Contact",
     display: true,
   },
