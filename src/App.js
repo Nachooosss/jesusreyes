@@ -1,20 +1,42 @@
-import "./App.css";
 import React, { useEffect, useState } from "react";
-import Main from "./components/Main";
-import Preloader from "./components/others/Preloader/Preloader";
+import Dashboard from "./components/Dashboard";
+import Preloader from "./components/StyledComponents/Preloader/Preloader";
+import BackGroundEffect from "./components/StyledComponents/BackGroundEffect/BackGroundEffect";
+import Layout from "./components/Sections/Layout/Layout";
+import { ThemeProvider } from "styled-components";
+import { useSelector } from "react-redux";
+import LightTheme from "./Theme/LightTheme";
+import DarkTheme from "./Theme/DarkTheme";
+
 function App() {
   const [Loading, setLoading] = useState(false);
   useEffect(() => {
+    console.log("Nice to meet you, I am Jesus Reyes .Enjoy my web site!");
     setTimeout(() => {
-      console.log("Ready");
       setLoading(true);
-    }, 4300);
+    }, 4100);
   }, []);
+  const ThemeActive = useSelector((state) => state.data.ThemeActive);
+
   return (
-    <div className="App">
-      {Loading ? <Main></Main> : <Preloader></Preloader>}
-    </div>
+    <>
+      <ThemeProvider theme={ThemeActive ? LightTheme : DarkTheme}>
+        {Loading ? (
+          <>
+            <BackGroundEffect></BackGroundEffect>
+            <Dashboard></Dashboard>
+            <Layout></Layout>
+          </>
+        ) : (
+          <Preloader></Preloader>
+        )}
+      </ThemeProvider>
+    </>
+    // <ThemeProvider theme={ThemeActive ? LightTheme : DarkTheme}>
+    //   <BackGroundEffect></BackGroundEffect>
+    //   <Dashboard></Dashboard>
+    //   <Layout></Layout>
+    // </ThemeProvider>
   );
 }
-
 export default App;
