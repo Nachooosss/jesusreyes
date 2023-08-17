@@ -57,7 +57,7 @@ import Spanish from "../../media/skills/languajes/spanish.png";
 import English from "../../media/skills/languajes/english.png";
 
 //companies
-import Orion from "../../media/companies/logoorion.PNG";
+import Orion from "../../media/companies/logoorion.png";
 import UCI from "../../media/companies/uci.jpeg";
 import Desoft from "../../media/companies/desoft.png";
 import Freelancer from "../../media/companies/freelance.png";
