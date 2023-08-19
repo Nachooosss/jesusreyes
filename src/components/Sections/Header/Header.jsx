@@ -14,16 +14,18 @@ const ContainerHeader = styled.div`
 `;
 
 const AddAnimation = css`
-  animation: float 6s ease-in-out infinite;
-  @keyframes float {
-    0% {
-      transform: translatey(0px);
-    }
-    50% {
-      transform: translatey(-20px);
-    }
-    100% {
-      transform: translatey(0px);
+  @media screen and (min-width: 992px) {
+    animation: float 6s ease-in-out infinite;
+    @keyframes float {
+      0% {
+        transform: translatey(0px);
+      }
+      50% {
+        transform: translatey(-20px);
+      }
+      100% {
+        transform: translatey(0px);
+      }
     }
   }
 `;
@@ -42,7 +44,7 @@ const Header = () => {
           $position="absolute"
           $opacity="0.6"
           $AnimationK={AddAnimation}
-          $animation_delay="2s"
+          $animation_delay="1s"
         ></Polygon>
         <PolygonObj></PolygonObj>
         <Avatar
