@@ -14,10 +14,6 @@ const AddAnimation = css`
       opacity: 0;
     }
   }
-  &:hover {
-    transition: 500ms ease-in-out;
-    background: ${(props) => props.theme.color.primary};
-  }
 `;
 
 const PolygonsOptions1 = [
@@ -123,10 +119,11 @@ const AreaEffectPolygons = styled.ul`
   position: absolute;
   padding: 0;
   margin: 0;
+  background-color: ${(props) => props.theme.color.secundaryLight};
   width: 100dvw;
   height: 100dvh;
   overflow: hidden;
-  background-color: transparent;
+  transition: 300ms ease-in;
 `;
 
 const BackGroundEffect = () => {

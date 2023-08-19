@@ -16,11 +16,10 @@ const Section = styled.div`
   height: 100dvh;
   width: 100dvw;
   position: absolute;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
   margin: 0;
   padding: 0;
-  background-color: ${(props) => props.theme.color.secundaryLight};
+  background-color: transparent;
   color: ${(props) => props.theme.color.secundaryLight};
   transition: 1s linear;
 `;
@@ -32,6 +31,8 @@ const AnimationSection = styled.div`
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: transparent;
   transition: 1s linear;
   animation-duration: 500ms;
