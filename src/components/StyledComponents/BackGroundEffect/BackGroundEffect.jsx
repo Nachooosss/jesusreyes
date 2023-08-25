@@ -16,7 +16,7 @@ const AddAnimation = css`
   }
   &:hover {
     transition: 500ms ease-in-out;
-    background-color: ${(props) => props.theme.color.primary};
+    background: ${(props) => props.theme.color.primary};
   }
 `;
 
@@ -121,10 +121,7 @@ const PolygonsOptions2 = [
 ];
 const AreaEffectPolygons = styled.ul`
   position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
   overflow: hidden;
