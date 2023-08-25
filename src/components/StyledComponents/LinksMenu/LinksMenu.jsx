@@ -279,30 +279,28 @@ const LinksMenu = () => {
                   {IconsMenu.map((Icon, index) => {
                     const IconMenu = Icon.type;
                     return (
-                      <>
-                        <DialIcon
-                          key={index}
-                          style={{
-                            display: Icon.display ? "flex" : "none",
-                            "--i": index,
-                          }}
-                          $isActive={activeMenu}
-                          onClick={() => handleLink(Icon)}
-                        >
-                          <DialButton>
-                            <CustomLink
-                              delay={500}
-                              to={Icon.link}
-                              children={
-                                <>
-                                  <IconMenu></IconMenu>
-                                </>
-                              }
-                              style={{ color: theme.color.secundaryLight }}
-                            ></CustomLink>
-                          </DialButton>
-                        </DialIcon>
-                      </>
+                      <DialIcon
+                        key={index}
+                        style={{
+                          display: Icon.display ? "flex" : "none",
+                          "--i": index,
+                        }}
+                        $isActive={activeMenu}
+                        onClick={() => handleLink(Icon)}
+                      >
+                        <DialButton>
+                          <CustomLink
+                            delay={500}
+                            to={Icon.link}
+                            children={
+                              <>
+                                <IconMenu></IconMenu>
+                              </>
+                            }
+                            style={{ color: theme.color.secundaryLight }}
+                          ></CustomLink>
+                        </DialButton>
+                      </DialIcon>
                     );
                   })}
                 </>

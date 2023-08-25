@@ -5,8 +5,6 @@ import { Menudesactive, desactive } from "../../../features/data/dataslice";
 import { Close } from "@mui/icons-material";
 const CloseContainer = styled.div`
   position: absolute;
-  width: 100px;
-  height: 100px;
   overflow: hidden;
   border-radius: 0.01px;
   display: flex;
@@ -16,12 +14,14 @@ const CloseContainer = styled.div`
     width: 75px;
     height: 75px;
   }
+  @media screen and (min-width: 992px) {
+    width: 125px;
+    height: 125px;
+  }
 `;
 const CloseSelector = styled.div`
   position: absolute;
-  z-index: 1;
-  width: 80px;
-  height: 80px;
+
   display: flex;
   background-color: ${(props) => props.theme.color.primaryLight};
   justify-content: center;
@@ -35,11 +35,10 @@ const CloseSelector = styled.div`
     width: 65px;
     height: 65px;
   }
-  @media screen and (min-width: 540px) {
+  @media screen and (min-width: 992px) {
     margin-left: -10px;
-  }
-  @media screen and (min-width: 540px) {
-    margin-left: -10px;
+    width: 115px;
+    height: 115px;
   }
 `;
 const CloseDial = ({ active, isActiveSkill, activeMenu }) => {

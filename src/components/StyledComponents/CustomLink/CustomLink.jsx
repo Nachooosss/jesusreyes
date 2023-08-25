@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
+import "./CustomLink.css";
 const CustomLink = ({ delay, replace, state, to, children, ...props }) => {
   const navigate = useNavigate();
   const timerRef = useRef();
@@ -12,7 +12,7 @@ const CustomLink = ({ delay, replace, state, to, children, ...props }) => {
   };
   return (
     <>
-      <Link to={to} {...props} onClick={clickHandler}>
+      <Link className="link" to={to} {...props} onClick={clickHandler}>
         {children}
       </Link>
     </>

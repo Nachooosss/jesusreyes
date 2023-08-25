@@ -3,8 +3,6 @@ import { styled, keyframes, css } from "styled-components";
 import { useSelector } from "react-redux";
 
 const DialElement = styled.div`
-  width: 150px;
-  height: 150px;
   overflow: hidden;
   border-radius: 0.01px;
   display: flex;
@@ -12,10 +10,6 @@ const DialElement = styled.div`
   justify-content: center;
   position: absolute;
   transition: 1s ease-in-out;
-  transform-origin: ${(props) => (props.$isActive ? `280px` : `100px`)};
-  left: ${(props) => (props.$isActive ? `-180px` : `-50px`)};
-  opacity: ${(props) => (props.$isActive ? `1` : `0`)};
-  transform: rotate("0deg") translateX("100px");
   animation: ${(props) => (props.$isActive ? "Startanimation" : "Endanimation")}
     1s linear forwards;
   animation-iteration-count: 1;
@@ -55,11 +49,6 @@ const DialElement = styled.div`
 `;
 const DialButton = styled.div`
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  display: flex;
-  width: 135px;
-  height: 135px;
-  justify-content: center;
-  align-items: center;
   transition: 1.5s ease-in-out;
   transform: rotate(calc(360deg / -6 * var(--i)));
   background-color: ${(props) => props.theme.color.primaryLighting};
@@ -83,11 +72,6 @@ const DialButton = styled.div`
   }
 `;
 const DialContainer = styled.div`
-  position: relative;
-  width: 135px;
-  height: 135px;
-  z-index: 100;
-  margin: auto;
   @media screen and (min-width: 320px) {
     width: 95px;
     height: 95px;
@@ -100,21 +84,14 @@ const DialContainer = styled.div`
 const DialContent = styled.div`
   position: absolute;
   top: 0;
-  left: 0;
   display: grid;
   font-size: 0.8rem;
-  justify-content: center;
   align-items: center;
   color: white;
   width: 100%;
   height: 100%;
 `;
 const ProgressPolygon = styled.svg`
-  position: relative;
-  width: 135px;
-  height: 135px;
-  margin: 0 auto;
-  transform: scale(1.25);
   @media screen and (min-width: 320px) {
     width: 100px;
     height: 100px;
@@ -124,7 +101,7 @@ const ProgressPolygon = styled.svg`
   @media screen and (min-width: 720px) {
     width: 135px;
     height: 135px;
-    margin: 0 auto;
+    margin-left: unset;
     transform: scale(1.25);
   }
 `;
@@ -143,12 +120,10 @@ const startPolygon = css`
 `;
 const Polygon = styled.polygon`
   width: 100%;
-  outline: 1px solid transparent;
   height: 100%;
   fill: none;
   stroke-width: 10px;
   stroke: ${(props) => props.theme.color.primaryLighting};
-  transform: translate(17px, 17px);
   stroke-linecap: round;
   transition: all 1ms linear;
   stroke-dasharray: 315px;
@@ -171,48 +146,45 @@ const DialComponent = ({ items }) => {
     <>
       {items.map((items, index) => {
         return (
-          <>
-            <DialElement
-              key={index}
-              style={{
-                "--i": index,
-                "--cp": items.progress,
-                opacity: items.name.length === 0 ? "0" : "",
-              }}
-              $isActive={isActiveSkill}
-            >
-              <DialButton $img={items.img}>
-                <DialContainer>
-                  <ProgressPolygon preserveAspectRatio="none">
-                    <Polygon points="50 3, 100 28, 100 75,50 100,3 75,3 25"></Polygon>
-                    <Polygon
-                      $isActive={isActiveSkill}
-                      points="50 3, 100 28, 100 75,50 100,3 75,3 25"
-                    ></Polygon>
-                  </ProgressPolygon>
-                  <DialContent>
-                    <div
+          <DialElement
+            key={index}
+            style={{
+              "--i": index,
+              "--cp": items.progress,
+              opacity: items.name.length === 0 ? "0" : "",
+            }}
+            $isActive={isActiveSkill}
+          >
+            <DialButton $img={items.img}>
+              <DialContainer>
+                <ProgressPolygon preserveAspectRatio="none">
+                  <Polygon points="50 3, 100 28, 100 75,50 100,3 75,3 25"></Polygon>
+                  <Polygon
+                    $isActive={isActiveSkill}
+                    points="50 3, 100 28, 100 75,50 100,3 75,3 25"
+                  ></Polygon>
+                </ProgressPolygon>
+                <DialContent>
+                  <div
+                    style={{
+                      marginBottom: "-50px",
+                    }}
+                  >
+                    <p
                       style={{
-                        display: "flex",
-                        marginBottom: "-50px",
+                        flex: "1 1 auto",
+                        padding: "5px",
+                        cursor: "default",
                       }}
                     >
-                      <p
-                        style={{
-                          flex: "1 1 auto",
-                          padding: "5px",
-                          cursor: "default",
-                        }}
-                      >
-                        {items.name}
-                      </p>
-                    </div>
-                    <div style={{ cursor: "default" }}>{items.progress}%</div>
-                  </DialContent>
-                </DialContainer>
-              </DialButton>
-            </DialElement>
-          </>
+                      {items.name}
+                    </p>
+                  </div>
+                  <div style={{ cursor: "default" }}>{items.progress}%</div>
+                </DialContent>
+              </DialContainer>
+            </DialButton>
+          </DialElement>
         );
       })}
     </>

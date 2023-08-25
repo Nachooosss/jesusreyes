@@ -5,9 +5,6 @@ import "animate.css";
 const Logo = styled.div`
   width: 60px;
   height: 70px;
-  margin-left: 2%;
-  background-color: transparent;
-  overflow: hidden;
   ${(props) => Img}
   background-repeat: no-repeat;
   background-position: center;

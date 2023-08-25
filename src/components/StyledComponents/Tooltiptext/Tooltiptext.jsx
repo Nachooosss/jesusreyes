@@ -4,7 +4,6 @@ const Tooltip = styled.span`
   visibility: hidden;
   color: ${(props) => props.theme.color.primary};
   position: absolute;
-  width: max-content;
   margin-top: 10px;
   margin-left: 10px;
   background-color: ${(props) => props.theme.color.secundaryLight};

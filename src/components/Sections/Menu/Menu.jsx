@@ -10,7 +10,6 @@ const MenuPrimary = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  background-color: transparent;
   padding-top: 5px;
 `;
 
@@ -25,7 +24,10 @@ const Menu = () => {
       animate__repeat-1
       animate__delay-6s"
       >
-        <Link to="" style={{ color: theme.color.primary, marginLeft: "20px" }}>
+        <Link
+          to="/jesusreyes/"
+          style={{ color: theme.color.primary, marginLeft: "20px" }}
+        >
           <Logo className="logo animate__animated"></Logo>
         </Link>
         <LinksMenu></LinksMenu>

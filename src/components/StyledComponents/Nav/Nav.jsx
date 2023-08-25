@@ -2,8 +2,6 @@ import React from "react";
 import { styled } from "styled-components";
 const Line = styled.div`
   height: 50px;
-  width: 35px;
-  background-color: transparent;
   border: 2px solid ${(props) => props.theme.color.primary};
   border-top: 0px;
   border-bottom: 0px;
@@ -16,8 +14,6 @@ const Line = styled.div`
 `;
 const GridNav = styled.div`
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-auto-rows: auto;
   gap: 12px;
   position: absolute;
   bottom: 0;
