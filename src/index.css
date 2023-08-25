@@ -1,12 +1,8 @@
 html,
 body {
-  display: flex;
   text-align: center;
   margin: 0;
   padding: 0;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
 }
 html {
   background-color: #d7cec7;

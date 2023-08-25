@@ -13,26 +13,26 @@ const Section = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin: 0 auto;
+  height: 100dvh;
+  width: 100dvw;
+  position: absolute;
+  overflow: hidden;
+  margin: 0;
   padding: 0;
   background-color: ${(props) => props.theme.color.secundaryLight};
   color: ${(props) => props.theme.color.secundaryLight};
   transition: 1s linear;
-  overflow: hidden;
-  z-index: 2;
 `;
 const AnimationSection = styled.div`
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  margin: 0;
   padding: 0;
   background-color: transparent;
   transition: 1s linear;
-  overflow: hidden;
   animation-duration: 500ms;
 `;
 const Components = [

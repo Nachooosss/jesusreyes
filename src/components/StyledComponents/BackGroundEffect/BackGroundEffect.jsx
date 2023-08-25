@@ -121,9 +121,10 @@ const PolygonsOptions2 = [
 ];
 const AreaEffectPolygons = styled.ul`
   position: absolute;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100dvw;
+  height: 100dvh;
   overflow: hidden;
   background-color: transparent;
 `;
