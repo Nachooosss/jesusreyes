@@ -32,11 +32,6 @@ function App() {
         )}
       </ThemeProvider>
     </>
-    // <ThemeProvider theme={ThemeActive ? LightTheme : DarkTheme}>
-    //   <BackGroundEffect></BackGroundEffect>
-    //   <Dashboard></Dashboard>
-    //   <Layout></Layout>
-    // </ThemeProvider>
   );
 }
 export default App;
