@@ -4,7 +4,7 @@
 .timeline {
   margin: auto;
   padding-top: 80px !important;
-  margin-bottom: 50px !important;
+  padding-bottom: 80px !important;
 }
 @media screen and (min-width: 320px) {
   .timeline {
