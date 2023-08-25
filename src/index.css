@@ -6,6 +6,7 @@ body {
   padding: 0;
   flex-direction: column;
   height: 100%;
+  overflow: hidden;
 }
 html {
   background-color: #d7cec7;
