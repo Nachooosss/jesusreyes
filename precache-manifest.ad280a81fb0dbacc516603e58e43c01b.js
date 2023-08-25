@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "630ffbb831efd4a8e856",
-    "url": "/jesusreyes/static/css/main.a7779400.chunk.css"
+    "revision": "3b57be81de4debb6582d",
+    "url": "/jesusreyes/static/css/main.9ec754b9.chunk.css"
   },
   {
-    "revision": "630ffbb831efd4a8e856",
-    "url": "/jesusreyes/static/js/main.630ffbb8.chunk.js"
+    "revision": "3b57be81de4debb6582d",
+    "url": "/jesusreyes/static/js/main.3b57be81.chunk.js"
   },
   {
     "revision": "af61781b6f3e55d4eb27",
@@ -120,7 +120,7 @@ self.__precacheManifest = [
     "url": "/jesusreyes/static/media/CV Jesús Miguel Reyes García 2023.84c46caa.pdf"
   },
   {
-    "revision": "69c5feba33599d5630db8ea9bc748e09",
+    "revision": "9990eae53ca57e3e9da26969bb919fae",
     "url": "/jesusreyes/index.html"
   }
 ];
