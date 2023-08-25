@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "f15d279eeeb7c511781e",
-    "url": "/jesusreyes/static/css/main.5693ac80.chunk.css"
+    "revision": "630ffbb831efd4a8e856",
+    "url": "/jesusreyes/static/css/main.a7779400.chunk.css"
   },
   {
-    "revision": "f15d279eeeb7c511781e",
-    "url": "/jesusreyes/static/js/main.f15d279e.chunk.js"
+    "revision": "630ffbb831efd4a8e856",
+    "url": "/jesusreyes/static/js/main.630ffbb8.chunk.js"
   },
   {
-    "revision": "086b4935a08e44fc8a7d",
-    "url": "/jesusreyes/static/js/1.086b4935.chunk.js"
+    "revision": "af61781b6f3e55d4eb27",
+    "url": "/jesusreyes/static/js/1.af61781b.chunk.js"
   },
   {
-    "revision": "54646f88e5a567c3ddd1",
-    "url": "/jesusreyes/static/css/2.1da2e0d4.chunk.css"
+    "revision": "c066bd8f65c6478f4f2f",
+    "url": "/jesusreyes/static/css/2.34af3907.chunk.css"
   },
   {
-    "revision": "54646f88e5a567c3ddd1",
-    "url": "/jesusreyes/static/js/2.54646f88.chunk.js"
+    "revision": "c066bd8f65c6478f4f2f",
+    "url": "/jesusreyes/static/js/2.c066bd8f.chunk.js"
   },
   {
-    "revision": "351e55c3f20705bc4cf8",
-    "url": "/jesusreyes/static/js/runtime~main.351e55c3.js"
+    "revision": "281b73f0052f7dc31eca",
+    "url": "/jesusreyes/static/js/runtime~main.281b73f0.js"
   },
   {
     "revision": "fcb596a4f4e6b09e46e5a2914d174a7e",
@@ -120,7 +120,7 @@ self.__precacheManifest = [
     "url": "/jesusreyes/static/media/CV Jesús Miguel Reyes García 2023.84c46caa.pdf"
   },
   {
-    "revision": "74f14aaae5d80e366834ba0018312599",
+    "revision": "69c5feba33599d5630db8ea9bc748e09",
     "url": "/jesusreyes/index.html"
   }
 ];
