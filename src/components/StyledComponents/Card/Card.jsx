@@ -8,12 +8,8 @@ import "./Card.css";
 const CardTemplete = styled.div`
   position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: auto;
-  padding: 10px;
   padding-right: 120px;
-  width: 40vw;
   overflow: show;
   color: ${(props) => props.theme.color.secundaryLight};
   background-color: ${(props) => props.theme.color.primary};
@@ -24,15 +20,12 @@ const CardTemplete = styled.div`
   animation-timing-function: forwards;
   @media screen and (min-width: 320px) {
     display: block !important;
-    padding: 0 !important;
-    width: 220px !important;
-    margin-top: 50px !important;
+    padding: 5px !important;
+    width: 210px !important;
   }
   @media screen and (min-width: 540px) {
     display: block !important;
-    padding: 0 !important;
     width: 330px !important;
-    margin-top: 50px !important;
   }
   @media screen and (min-width: 720px) {
     width: 400px !important;
@@ -107,14 +100,9 @@ const Card = ({ txt, title, children }) => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          zIndex: "2",
         }}
       >
-        <Avatar
-          className="avatarAbout"
-          style={{ width: "200px", height: "280px", marginBottom: "35px" }}
-          $hoverActive={true}
-        />
+        <Avatar className="avatarAbout" $hoverActive={true} />
       </Polygon>
       {children}
       <Txt txt={txt}></Txt>

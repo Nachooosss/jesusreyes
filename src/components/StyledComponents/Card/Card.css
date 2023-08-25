@@ -1,7 +1,6 @@
 @media screen and (min-width: 320px) {
   .polygoncard {
     position: relative !important;
-    right: auto !important;
     left: -20px !important;
     padding: 12px !important;
     height: 230px !important;
@@ -9,7 +8,7 @@
   }
   .avatarAbout {
     height: 200px !important;
-    width: 300px !important;
+    width: 150px !important;
     background-size: contain !important;
   }
 }
@@ -22,6 +21,10 @@
     height: 350px !important;
     width: 350px !important;
   }
+  .avatarAbout {
+    height: 250px !important;
+    width: 200px !important;
+  }
 }
 @media screen and (min-width: 720px) {
   .polygoncard {
@@ -31,10 +34,8 @@
     width: 410px !important;
   }
   .avatarAbout {
-    height: 280px !important;
+    height: 300px !important;
     width: 250px !important;
-    border-bottom-left-radius: 50% !important;
-    border-bottom-right-radius: 50% !important;
   }
 }
 @media screen and (min-width: 992px) {
@@ -46,18 +47,17 @@
     height: 290px !important;
     width: 290px !important;
   }
+  .avatarAbout {
+    height: 250px !important;
+    width: 200px !important;
+  }
 }
 @media screen and (min-width: 1200px) {
   .polygoncard {
-    right: -190px !important;
+    right: -200px !important;
     padding: 15px !important;
     height: 300px !important;
     width: 300px !important;
-  }
-}
-@media screen and (min-width: 1376px) {
-  .polygoncard {
-    right: -200px !important;
   }
 }
 @media screen and (min-width: 1600px) {

@@ -22,10 +22,10 @@ const Contact = () => {
   const Elements = () => {
     return (
       <>
-        {Icons.map((Icon) => {
+        {Icons.map((Icon, index) => {
           const IconComponent = Icon.type;
           return (
-            <>
+            <div key={index} style={{ padding: "10px" }}>
               <IconComponent
                 className="IconContact"
                 onClick={() => handleLink(Icon)}
@@ -33,7 +33,7 @@ const Contact = () => {
               <div>
                 <Txt txt={Icon.txtTooltip} $txtaling="center"></Txt>
               </div>
-            </>
+            </div>
           );
         })}
       </>
@@ -45,7 +45,7 @@ const Contact = () => {
       <Card
         children={
           <>
-            <div style={{ display: "flex", width: "fit-content" }}>
+            <div style={{ display: "flex" }}>
               <Elements></Elements>
             </div>
           </>

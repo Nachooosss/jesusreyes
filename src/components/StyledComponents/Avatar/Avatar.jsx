@@ -2,15 +2,9 @@ import styled from "styled-components";
 import { useSelector } from "react-redux";
 
 const Avatar = styled.div`
-  display: flex;
-  border: 2px solid transparent;
   position: ${(p) => (p.$position ? p.$position : "relative")};
   right: ${(p) => (p.$right ? p.$right : "0")};
-  bottom: -20px;
-  width: 200px;
-  height: 300px;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
+  border-radius: 30%;
   ${(props) => ImgIA}
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -24,18 +18,14 @@ const Avatar = styled.div`
 const ImgIA = (props) => {
   const IA = useSelector((state) => state.data.IA);
   return `
-  background: url(${IA});
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(${IA}) center no-repeat;
   background-size: cover;
 `;
 };
 const ImgOR = (props) => {
   const Original = useSelector((state) => state.data.Original);
   return `
-  background-image: url(${Original});
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(${Original}) center no-repeat;
   background-size: cover;
 `;
 };
