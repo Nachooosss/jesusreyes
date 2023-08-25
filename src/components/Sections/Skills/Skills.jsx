@@ -8,53 +8,18 @@ import CloseDial from "../../StyledComponents/Dialog/CloseDial";
 
 const Gallery = styled.ul`
   display: grid;
-  grid-auto-rows: 20vh;
-  grid-template-columns: repeat(6, 100px);
-  gap: 5px;
   margin: 0 auto;
   @media screen and (min-width: 320px) {
-    grid-template-columns: repeat(2, 100px);
-    grid-auto-rows: 35vh;
-    margin-top: 160dvh;
-  }
-  @media screen and (min-width: 360px) {
-    grid-auto-rows: 31vh;
-  }
-  @media screen and (min-width: 540px) {
-    grid-auto-rows: 32vh;
-  }
-  @media screen and (min-width: 600px) {
-    grid-auto-rows: 22vh;
-    margin-top: 105dvh;
+    grid-template-columns: repeat(2, 120px);
+    gap: 3px;
   }
   @media screen and (min-width: 720px) {
-    grid-template-columns: repeat(4, 100px);
-    grid-auto-rows: 20vh;
-    gap: 20px;
-    margin: 0 auto;
-  }
-  @media screen and (min-width: 992px) {
     grid-template-columns: repeat(6, 100px);
-    gap: 5px;
-    grid-auto-rows: 20vh;
-  }
-  @media screen and (min-width: 1200px) {
-    grid-auto-rows: 25vh;
-  }
-  @media screen and (min-width: 1280px) {
-    grid-auto-rows: 20vh;
-  }
-  @media screen and (min-width: 1440px) {
-    grid-auto-rows: 18vh;
+    grid-auto-rows: 150px;
   }
   @media screen and (min-width: 1600px) {
-    grid-auto-rows: 20vh;
-  }
-  @media screen and (min-width: 1620px) {
-    grid-auto-rows: 15vh;
-  }
-  @media screen and (min-width: 1920px) {
-    grid-auto-rows: 15vh;
+    grid-template-columns: repeat(6, 120px);
+    grid-auto-rows: 180px;
   }
 `;
 const GalleryItem = styled.li`
@@ -63,8 +28,6 @@ const GalleryItem = styled.li`
   display: flex;
   background-color: ${(props) => props.theme.color.primary};
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  grid-column: span 2;
-  height: 200px;
   transition: all 500ms ease-in-out;
   cursor: pointer;
   background-blend-mode: multiply;
@@ -78,48 +41,41 @@ const GalleryItem = styled.li`
     color: white;
     z-index: 2;
   }
-  &:nth-child(11n + 1) {
-    grid-column: 2 / span 2;
-  }
-  &:nth-child(11n + 3) {
-    grid-column: 1 / span 2;
-  }
-  &:nth-child(11n + 6) {
-    grid-column: 2 / span 2;
-  }
   @media screen and (min-width: 320px) {
+    height: 120px;
+    width: 120px;
+    grid-column: span 1;
     &:nth-child(11n + 1) {
-      grid-column: span 2;
+      grid-column: span 1;
+    }
+    &:nth-child(11n + 3) {
+      grid-column: span 1;
+    }
+    &:nth-child(11n + 6) {
+      grid-column: span 1;
+    }
+  }
+  @media screen and (min-width: 720px) {
+    height: 200px;
+    width: 200px;
+    grid-column: span 2;
+    &:nth-child(11n + 1) {
+      grid-column: 2 / span 2;
+    }
+    &:nth-child(11n + 2) {
+      grid-column: 4 / span 3;
     }
     &:nth-child(11n + 3) {
       grid-column: span 2;
     }
     &:nth-child(11n + 6) {
-      grid-column: span 2;
+      grid-column: 2 / span 2;
     }
   }
 
-  @media screen and (min-width: 540px) {
-    &:nth-child(11n + 1) {
-      grid-column: span 2;
-    }
-    &:nth-child(11n + 3) {
-      grid-column: span 2;
-    }
-    &:nth-child(11n + 6) {
-      grid-column: span 2;
-    }
-  }
-  @media screen and (min-width: 992px) {
-    &:nth-child(11n + 1) {
-      grid-column: 2 / span 2;
-    }
-    &:nth-child(11n + 3) {
-      grid-column: 1 / span 2;
-    }
-    &:nth-child(11n + 6) {
-      grid-column: 2 / span 2;
-    }
+  @media screen and (min-width: 1600px) {
+    height: 240px;
+    width: 240px;
   }
 `;
 const Skills = () => {
