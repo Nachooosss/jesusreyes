@@ -22,71 +22,69 @@ export default function CustomizedTimeline() {
           cursor: "default",
         }}
       >
-        {companies.map((item) => {
+        {companies.map((item, index) => {
           return (
-            <>
-              <TimelineItem className="itemtimeline">
-                <TimelineOppositeContent
-                  className="context"
+            <TimelineItem key={index} className="itemtimeline">
+              <TimelineOppositeContent
+                className="context"
+                style={{
+                  color: theme.color.primary,
+                  animationDuration: "500ms",
+                  animationName: "fadeInRight",
+                }}
+                sx={{
+                  m: "auto 0",
+                }}
+                align="right"
+                variant="body2"
+              >
+                {item.time}
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector
+                  sx={{ bgcolor: theme.color.primary }}
                   style={{
-                    color: theme.color.primary,
                     animationDuration: "500ms",
                     animationName: "fadeInRight",
                   }}
-                  sx={{
-                    m: "auto 0",
-                  }}
-                  align="right"
-                  variant="body2"
-                >
-                  {item.time}
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineConnector
-                    sx={{ bgcolor: theme.color.primary }}
-                    style={{
-                      animationDuration: "500ms",
-                      animationName: "fadeInRight",
-                    }}
-                  />
-                  <img
-                    src={item.img}
-                    alt=""
-                    width={"40px"}
-                    height={"40px"}
-                    style={{
-                      borderRadius: "100%",
-                      animationDuration: "500ms",
-                      animationName: "fadeInLeft",
-                    }}
-                  />
-                  <TimelineConnector
-                    style={{
-                      animationDuration: "500ms",
-                      animationName: "fadeInRight",
-                    }}
-                    sx={{ bgcolor: theme.color.primary }}
-                  />
-                </TimelineSeparator>
-                <TimelineContent
+                />
+                <img
+                  src={item.img}
+                  alt=""
+                  width={"40px"}
+                  height={"40px"}
                   style={{
+                    borderRadius: "100%",
                     animationDuration: "500ms",
                     animationName: "fadeInLeft",
                   }}
+                />
+                <TimelineConnector
+                  style={{
+                    animationDuration: "500ms",
+                    animationName: "fadeInRight",
+                  }}
+                  sx={{ bgcolor: theme.color.primary }}
+                />
+              </TimelineSeparator>
+              <TimelineContent
+                style={{
+                  animationDuration: "500ms",
+                  animationName: "fadeInLeft",
+                }}
+              >
+                <Typography
+                  className="context"
+                  component="span"
+                  color={theme.color.primary}
                 >
-                  <Typography
-                    className="context"
-                    component="span"
-                    color={theme.color.primary}
-                  >
-                    {item.place}
-                  </Typography>
-                  <Typography className="context" color={theme.color.primary}>
-                    {item.description}
-                  </Typography>
-                </TimelineContent>
-              </TimelineItem>
-            </>
+                  {item.place}
+                </Typography>
+                <Typography className="context" color={theme.color.primary}>
+                  {item.description}
+                </Typography>
+              </TimelineContent>
+            </TimelineItem>
           );
         })}
       </Timeline>
