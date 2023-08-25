@@ -117,13 +117,11 @@ const WorkGallery = () => {
     <GalleryW
       style={{ animationName: "fadeInLeft", animationDuration: "500ms" }}
     >
-      {dataImg.map((item) => {
+      {dataImg.map((item, index) => {
         return (
-          <>
-            <GalleryImg $src={item.img}>
-              <h1>{item.txt}</h1>
-            </GalleryImg>
-          </>
+          <GalleryImg key={index} $src={item.img}>
+            <h1>{item.txt}</h1>
+          </GalleryImg>
         );
       })}
     </GalleryW>
