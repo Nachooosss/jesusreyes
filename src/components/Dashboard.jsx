@@ -15,11 +15,11 @@ const Section = styled.div`
   justify-content: center;
   height: 100vh;
   margin: 0 auto;
+  padding: 0;
   background-color: ${(props) => props.theme.color.secundaryLight};
   color: ${(props) => props.theme.color.secundaryLight};
   transition: 1s linear;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 2;
 `;
 const AnimationSection = styled.div`
@@ -29,10 +29,10 @@ const AnimationSection = styled.div`
   justify-content: center;
   height: 100vh;
   margin: 0 auto;
+  padding: 0;
   background-color: transparent;
   transition: 1s linear;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
   animation-duration: 500ms;
 `;
 const Components = [
