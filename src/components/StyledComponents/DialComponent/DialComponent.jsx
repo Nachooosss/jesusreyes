@@ -9,9 +9,9 @@ const DialElement = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  transition: 1s ease-in-out;
+  transition: 500ms ease;
   animation: ${(props) => (props.$isActive ? "Startanimation" : "Endanimation")}
-    1s linear forwards;
+    700ms linear forwards;
   animation-iteration-count: 1;
   @keyframes Startanimation {
     from {
@@ -116,7 +116,7 @@ const Polygonstroke = keyframes`
 const startPolygon = css`
   animation: ${Polygonstroke} 1s linear forwards;
   animation-iteration-count: 1;
-  animation-delay: 1s;
+  animation-delay: 800ms;
 `;
 const Polygon = styled.polygon`
   width: 100%;
@@ -152,6 +152,7 @@ const DialComponent = ({ items }) => {
               "--i": index,
               "--cp": items.progress,
               opacity: items.name.length === 0 ? "0" : "",
+              animationDelay: "200ms",
             }}
             $isActive={isActiveSkill}
           >

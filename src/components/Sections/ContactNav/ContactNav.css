@@ -12,7 +12,7 @@
     height: 40px !important;
   }
   .IconContact:hover {
-    animation: tada 2s infinite;
+    animation: tada 1s infinite;
     filter: drop-shadow(7px 5px 1px #00000049);
   }
   .IconContact:hover ~ .Tooliptext {

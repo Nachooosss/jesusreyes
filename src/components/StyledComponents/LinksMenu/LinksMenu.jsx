@@ -121,13 +121,13 @@ const DialIcon = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  transition: 500ms ease-in-out;
+  transition: 300ms ease;
   transform-origin: ${(props) => (props.$isActive ? `200px` : `50px`)};
   left: ${(props) => (props.$isActive ? `-100px` : `0px`)};
   opacity: ${(props) => (props.$isActive ? `1` : `0`)};
   transform: rotate("0deg") translateX("100px");
   animation: ${(props) => (props.$isActive ? "Startanimatio" : "Endanimatio")}
-    500ms linear forwards;
+    300ms linear forwards;
   animation-iteration-count: 1;
   @keyframes Startanimatio {
     from {
@@ -166,7 +166,7 @@ const DialButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 500ms ease-in-out;
+  transition: 300ms ease;
   transform: rotate(calc(360deg / -9 * var(--i)));
   color: ${(props) => props.theme.color.secundaryLight};
   @media screen and (min-width: 320px) {
@@ -203,7 +203,7 @@ const LinksMenu = () => {
           setTimeout(() => {
             dispatch(setAnimationIn());
             dispatch(Menudesactive());
-          }, 550);
+          }, 350);
         }
         break;
     }
@@ -228,22 +228,24 @@ const LinksMenu = () => {
             <div
               key={index}
               style={{
-                display: Icon.display ? "flex" : "none",
                 width: "40px",
-                padding: "8px",
+                display: Icon.display ? "flex" : "none",
+                margin: "8px",
               }}
               onClick={() => handleLink(Icon)}
             >
               <CustomLink
                 className="IconM animate__animated"
-                delay={500}
+                delay={300}
                 to={Icon.link}
                 children={
                   <>
                     <IconMenu className="Ico"></IconMenu>
                   </>
                 }
-                style={{ color: theme.color.primary }}
+                style={{
+                  color: theme.color.primary,
+                }}
               ></CustomLink>
               <Tooltiptext className="TooliptextM">
                 {Icon.txtTooltip}
@@ -290,7 +292,7 @@ const LinksMenu = () => {
                       >
                         <DialButton>
                           <CustomLink
-                            delay={500}
+                            delay={300}
                             to={Icon.link}
                             children={
                               <>
