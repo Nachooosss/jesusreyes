@@ -1,7 +1,7 @@
 {
   "main.css": "/jesusreyes/static/css/main.824b1a7a.chunk.css",
-  "main.js": "/jesusreyes/static/js/main.9bb2c2a3.chunk.js",
-  "main.js.map": "/jesusreyes/static/js/main.9bb2c2a3.chunk.js.map",
+  "main.js": "/jesusreyes/static/js/main.5417f6fc.chunk.js",
+  "main.js.map": "/jesusreyes/static/js/main.5417f6fc.chunk.js.map",
   "static/js/1.af61781b.chunk.js": "/jesusreyes/static/js/1.af61781b.chunk.js",
   "static/js/1.af61781b.chunk.js.map": "/jesusreyes/static/js/1.af61781b.chunk.js.map",
   "static/css/2.34af3907.chunk.css": "/jesusreyes/static/css/2.34af3907.chunk.css",
@@ -32,10 +32,10 @@
   "static/media/empathy.jpg": "/jesusreyes/static/media/empathy.8d5d36a1.jpg",
   "static/media/logocubana.jpg": "/jesusreyes/static/media/logocubana.4de1923c.jpg",
   "static/media/mincex.jpg": "/jesusreyes/static/media/mincex.614f4ced.jpg",
-  "static/media/CV Jesús Miguel Reyes García 2023.pdf": "/jesusreyes/static/media/CV Jesús Miguel Reyes García 2023.84c46caa.pdf",
-  "static/css/2.34af3907.chunk.css.map": "/jesusreyes/static/css/2.34af3907.chunk.css.map",
+  "static/media/CV Jesús Miguel Reyes García 2023.pdf": "/jesusreyes/static/media/CV Jesús Miguel Reyes García 2023.7a2191de.pdf",
   "static/css/main.824b1a7a.chunk.css.map": "/jesusreyes/static/css/main.824b1a7a.chunk.css.map",
+  "static/css/2.34af3907.chunk.css.map": "/jesusreyes/static/css/2.34af3907.chunk.css.map",
   "index.html": "/jesusreyes/index.html",
-  "precache-manifest.b44c7289773fed98e1ab1fea85399e07.js": "/jesusreyes/precache-manifest.b44c7289773fed98e1ab1fea85399e07.js",
+  "precache-manifest.14ff1b7be69105f407acaf9bd10e11c5.js": "/jesusreyes/precache-manifest.14ff1b7be69105f407acaf9bd10e11c5.js",
   "service-worker.js": "/jesusreyes/service-worker.js"
 }
