@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../../StyledComponents/Card/Card";
-import Txt from "../../StyledComponents/Txt/Txt";
+import Card from "../../components/Card/Card";
+import Txt from "../../components/Txt/Txt";
 import { Email, WhatsApp } from "@mui/icons-material";
 
 const Contact = () => {

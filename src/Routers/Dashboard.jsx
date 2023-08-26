@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./Sections/Header/Header";
-import AboutMe from "./Sections/AboutMe/AboutMe";
-import Skills from "./Sections/Skills/Skills";
-import Timeline from "./Sections/TimeLine/TimeLine";
-import Contact from "./Sections/Contact/Contact";
-import WorkGallery from "./Sections/WorkGallery/WorkGallery";
+import Header from "../pages/Header/Header";
+import AboutMe from "../pages/AboutMe/AboutMe";
+import Skills from "../pages/Skills/Skills";
+import Timeline from "../pages/TimeLine/TimeLine";
+import Contact from "../pages/Contact/Contact";
+import WorkGallery from "../pages/WorkGallery/WorkGallery";
 import { styled } from "styled-components";
 import { Route, Routes } from "react-router-dom";
 import { useSelector } from "react-redux";

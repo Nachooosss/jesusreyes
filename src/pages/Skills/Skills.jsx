@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { styled } from "styled-components";
-import Dialog from "../../StyledComponents/Dialog/Dialog";
-import DialComponent from "../../StyledComponents/DialComponent/DialComponent";
+import Dialog from "../../components/Dialog/Dialog";
+import DialComponent from "../../components/DialComponent/DialComponent";
 import { useSelector, useDispatch } from "react-redux";
-import { active, desactive } from "../../../features/data/dataslice";
-import CloseDial from "../../StyledComponents/Dialog/CloseDial";
+import { active, desactive } from "../../store/dataslice";
+import CloseDial from "../../components/Dialog/CloseDial";
 
 const Gallery = styled.ul`
   display: grid;

@@ -1,9 +1,9 @@
 import React from "react";
 import { styled } from "styled-components";
-import FreelanceImg from "../../../media/companies/freelance.png";
-import Companies from "../../../media/skills/interpersonal/relationshipmanagent.jpeg";
-import Others from "../../../media/skills/testingdebug/proactive.png";
-import Old from "../../../media/skills/testingdebug/acceptance.jpeg";
+import FreelanceImg from "../../assets/images/companies/freelance.png";
+import Companies from "../../assets/images/skills/interpersonal/relationshipmanagent.jpeg";
+import Others from "../../assets/images/skills/testingdebug/proactive.png";
+import Old from "../../assets/images/skills/testingdebug/acceptance.jpeg";
 const GalleryW = styled.div`
   display: grid;
   grid-auto-rows: 20vh;

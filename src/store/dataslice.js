@@ -1,68 +1,68 @@
 import { createSlice } from "@reduxjs/toolkit";
 //avatar
-import IA from "../../media/avatar/IA-Avatar.png";
-import Original from "../../media/avatar/avatar.png";
+import IA from "../assets/images/avatar/IA-Avatar.png";
+import Original from "../assets/images/avatar/avatar.png";
 //logo
-import Logo from "../../media/logo/ifLogo.svg";
-import LogoTwo from "../../media/logo/ifLogoTwo.svg";
+import Logo from "../assets/icons/logo/ifLogo.svg";
+import LogoTwo from "../assets/icons/logo/ifLogoTwo.svg";
 //skills
-import PLIMG from "../../media/skills/Programminglanguages.jpg";
-import FIMG from "../../media/skills/Frameworks.jpg";
-import ASIMG from "../../media/skills/analytical.jpeg";
-import TDSIMG from "../../media/skills/debuggin.png";
-import SEOIMG from "../../media/skills/seo.png";
-import ISIMG from "../../media/skills/interpersonal.png";
-import LIMG from "../../media/skills/languajes.jpeg";
+import PLIMG from "../assets/images/skills/Programminglanguages.jpg";
+import FIMG from "../assets/images/skills/Frameworks.jpg";
+import ASIMG from "../assets/images/skills/analytical.jpeg";
+import TDSIMG from "../assets/images/skills/debuggin.png";
+import SEOIMG from "../assets/images/skills/seo.png";
+import ISIMG from "../assets/images/skills/interpersonal.png";
+import LIMG from "../assets/images/skills/languajes.jpeg";
 //Programminglanguages
-import JavaScript from "../../media/skills/Programminglanguages/javascript.jpg";
-import Java from "../../media/skills/Programminglanguages/java.jpg";
-import CSS from "../../media/skills/Programminglanguages/css.jpeg";
-import HTML from "../../media/skills/Programminglanguages/html.jpg";
-import PHP from "../../media/skills/Programminglanguages/php.png";
-import Python from "../../media/skills/Programminglanguages/python.jpg";
+import JavaScript from "../assets/images/skills/Programminglanguages/javascript.jpg";
+import Java from "../assets/images/skills/Programminglanguages/java.jpg";
+import CSS from "../assets/images/skills/Programminglanguages/css.jpeg";
+import HTML from "../assets/images/skills/Programminglanguages/html.jpg";
+import PHP from "../assets/images/skills/Programminglanguages/php.png";
+import Python from "../assets/images/skills/Programminglanguages/python.jpg";
 //frameworks
-import VueJS from "../../media/skills/frameworks/vuejs.jpg";
-import ReactJs from "../../media/skills/frameworks/reactjs.png";
-import NuxtJS from "../../media/skills/frameworks/nuxtjs.png";
-import NodeJS from "../../media/skills/frameworks/nodejs.jpg";
-import Django from "../../media/skills/frameworks/django.jpg";
-import Symfony from "../../media/skills/frameworks/symfony.jpg";
+import VueJS from "../assets/images/skills/frameworks/vuejs.jpg";
+import ReactJs from "../assets/images/skills/frameworks/reactjs.png";
+import NuxtJS from "../assets/images/skills/frameworks/nuxtjs.png";
+import NodeJS from "../assets/images/skills/frameworks/nodejs.jpg";
+import Django from "../assets/images/skills/frameworks/django.jpg";
+import Symfony from "../assets/images/skills/frameworks/symfony.jpg";
 //analytical
-import comunication from "../../media/skills/analytical/comunication.jpeg";
-import creativity from "../../media/skills/analytical/creativity.jpeg";
-import criticalthinking from "../../media/skills/analytical/criticalthinking.jpg";
-import problemsolving from "../../media/skills/analytical/problemsolving.jpg";
-import research from "../../media/skills/analytical/research.jpeg";
+import comunication from "../assets/images/skills/analytical/comunication.jpeg";
+import creativity from "../assets/images/skills/analytical/creativity.jpeg";
+import criticalthinking from "../assets/images/skills/analytical/criticalthinking.jpg";
+import problemsolving from "../assets/images/skills/analytical/problemsolving.jpg";
+import research from "../assets/images/skills/analytical/research.jpeg";
 //Testing-Debugging
-import Reactive from "../../media/skills/testingdebug/reactive.jpeg";
-import Proactive from "../../media/skills/testingdebug/proactive.png";
-import Backtracking from "../../media/skills/testingdebug/backtracking.png";
-import Unit from "../../media/skills/testingdebug/unittest.png";
-import Integration from "../../media/skills/testingdebug/integration.jpg";
-import Acceptance from "../../media/skills/testingdebug/acceptance.jpeg";
+import Reactive from "../assets/images/skills/testingdebug/reactive.jpeg";
+import Proactive from "../assets/images/skills/testingdebug/proactive.png";
+import Backtracking from "../assets/images/skills/testingdebug/backtracking.png";
+import Unit from "../assets/images/skills/testingdebug/unittest.png";
+import Integration from "../assets/images/skills/testingdebug/integration.jpg";
+import Acceptance from "../assets/images/skills/testingdebug/acceptance.jpeg";
 //Search Engine Optimization
-import SearchEngineAlgorithms from "../../media/skills/seo/searchenginealgorithm.png";
-import Prioritization from "../../media/skills/seo/priorization.jpg";
-import ProjectManagement from "../../media/skills/seo/projectmanagement.png";
-import Analysis from "../../media/skills/seo/analysis.jpeg";
-import DecisionMaking from "../../media/skills/seo/decisionmaking.jpeg";
+import SearchEngineAlgorithms from "../assets/images/skills/seo/searchenginealgorithm.png";
+import Prioritization from "../assets/images/skills/seo/priorization.jpg";
+import ProjectManagement from "../assets/images/skills/seo/projectmanagement.png";
+import Analysis from "../assets/images/skills/seo/analysis.jpeg";
+import DecisionMaking from "../assets/images/skills/seo/decisionmaking.jpeg";
 //Interpersonal Skills
-import Collaboration from "../../media/skills/interpersonal/collaboration.jpeg";
-import Leadership from "../../media/skills/interpersonal/leadership.jpg";
-import Teamwork from "../../media/skills/interpersonal/teamwork.jpg";
-import Relationshipmanagement from "../../media/skills/interpersonal/relationshipmanagent.jpeg";
-import Empathy from "../../media/skills/interpersonal/empathy.jpg";
+import Collaboration from "../assets/images/skills/interpersonal/collaboration.jpeg";
+import Leadership from "../assets/images/skills/interpersonal/leadership.jpg";
+import Teamwork from "../assets/images/skills/interpersonal/teamwork.jpg";
+import Relationshipmanagement from "../assets/images/skills/interpersonal/relationshipmanagent.jpeg";
+import Empathy from "../assets/images/skills/interpersonal/empathy.jpg";
 //Languages
-import Spanish from "../../media/skills/languajes/spanish.png";
-import English from "../../media/skills/languajes/english.png";
+import Spanish from "../assets/images/skills/languajes/spanish.png";
+import English from "../assets/images/skills/languajes/english.png";
 
 //companies
-import Orion from "../../media/companies/logoorion.png";
-import UCI from "../../media/companies/uci.jpeg";
-import Desoft from "../../media/companies/desoft.png";
-import Freelancer from "../../media/companies/freelance.png";
-import CubanaA from "../../media/companies/logocubana.jpg";
-import Mincex from "../../media/companies/mincex.jpg";
+import Orion from "../assets/images/companies/logoorion.png";
+import UCI from "../assets/images/companies/uci.jpeg";
+import Desoft from "../assets/images/companies/desoft.png";
+import Freelancer from "../assets/images/companies/freelance.png";
+import CubanaA from "../assets/images/companies/logocubana.jpg";
+import Mincex from "../assets/images/companies/mincex.jpg";
 export const dataslice = createSlice({
   name: "data",
   initialState: {

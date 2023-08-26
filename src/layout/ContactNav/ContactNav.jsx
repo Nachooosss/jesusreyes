@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from "../../StyledComponents/Nav/Nav";
-import Tooltiptext from "../../StyledComponents/Tooltiptext/Tooltiptext";
+import Nav from "../../components/Nav/Nav";
+import Tooltiptext from "../../components/Tooltiptext/Tooltiptext";
 import "./ContactNav.css";
 import { Email, WhatsApp, GitHub, LinkedIn } from "@mui/icons-material";
 import { useTheme } from "styled-components";
@@ -17,8 +17,8 @@ const Icons = [
   },
   {
     type: GitHub,
-    link: "https://github.com/Nachooosss",
-    txtTooltip: "github.com/Nachooosss",
+    link: "https://github.com/nachooosss",
+    txtTooltip: "github.com/nachooosss",
   },
   {
     type: LinkedIn,

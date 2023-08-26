@@ -13,7 +13,7 @@ import {
   Menu,
 } from "@mui/icons-material";
 import "./LinksMenu.css";
-import CV from "../../../media/resume/CV Jesús Miguel Reyes García 2023.pdf";
+import CV from "../../assets/pdf/CV Jesús Miguel Reyes García 2023.pdf";
 import { useDispatch, useSelector } from "react-redux";
 import {
   setAnimationIn,
@@ -22,7 +22,7 @@ import {
   setLightTheme,
   Menuactive,
   Menudesactive,
-} from "../../../features/data/dataslice";
+} from "../../store/dataslice";
 import { useLocation } from "react-router-dom";
 import { useTheme } from "styled-components";
 import CustomLink from "../CustomLink/CustomLink";

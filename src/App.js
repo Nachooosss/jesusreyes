@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Dashboard from "./components/Dashboard";
-import Preloader from "./components/StyledComponents/Preloader/Preloader";
-import BackGroundEffect from "./components/StyledComponents/BackGroundEffect/BackGroundEffect";
-import Layout from "./components/Sections/Layout/Layout";
+import Dashboard from "./Routers/Dashboard";
+import Preloader from "./layout/Preloader/Preloader";
+import BackGroundEffect from "./components/BackGroundEffect/BackGroundEffect";
+import Layout from "./layout/Layout";
 import { ThemeProvider } from "styled-components";
 import { useSelector } from "react-redux";
-import LightTheme from "./Theme/LightTheme";
-import DarkTheme from "./Theme/DarkTheme";
+import LightTheme from "./components/Theme/LightTheme";
+import DarkTheme from "./components/Theme/DarkTheme";
 
 function App() {
   const [Loading, setLoading] = useState(false);

@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { styled, useTheme } from "styled-components";
-import { Menudesactive, desactive } from "../../../features/data/dataslice";
+import { Menudesactive, desactive } from "../../store/dataslice";
 import { Close } from "@mui/icons-material";
 const CloseContainer = styled.div`
   position: absolute;

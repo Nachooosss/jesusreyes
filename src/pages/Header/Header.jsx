@@ -1,7 +1,7 @@
 import React from "react";
-import PolygonObj from "../../StyledComponents/PolygonObj/PolygonObj";
-import Polygon from "../../StyledComponents/Polygon/Polygon";
-import Avatar from "../../StyledComponents/Avatar/Avatar";
+import PolygonObj from "../../components/PolygonObj/PolygonObj";
+import Polygon from "../../components/Polygon/Polygon";
+import Avatar from "../../components/Avatar/Avatar";
 import { css, styled } from "styled-components";
 import "./Header.css";
 const ContainerHeader = styled.div`

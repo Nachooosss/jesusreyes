@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../StyledComponents/Logo/Logo";
-import LinksMenu from "../../StyledComponents/LinksMenu/LinksMenu";
+import Logo from "../../components/Logo/Logo";
+import LinksMenu from "../../components/LinksMenu/LinksMenu";
 import { styled, useTheme } from "styled-components";
 import "./Menu.css";
 const MenuPrimary = styled.div`

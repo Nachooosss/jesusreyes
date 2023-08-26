@@ -1,7 +1,7 @@
 import React from "react";
-import Menu from "../Menu/Menu";
-import ContactNav from "../ContactNav/ContactNav";
-import Footer from "../Footer/Footer";
+import Menu from "./Menu/Menu";
+import ContactNav from "./ContactNav/ContactNav";
+import Footer from "./Footer/Footer";
 
 const Layout = () => {
   return (
