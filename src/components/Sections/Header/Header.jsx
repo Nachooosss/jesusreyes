@@ -10,12 +10,12 @@ const ContainerHeader = styled.div`
   align-items: center;
   justify-content: center;
   animation-name: "fadeInLeft";
-  animation-duration: 500ms;
+  animation-duration: 300ms;
 `;
 
 const AddAnimation = css`
   @media screen and (min-width: 992px) {
-    animation: float 6s ease-in-out infinite;
+    animation: float 4s ease infinite;
     @keyframes float {
       0% {
         transform: translatey(0px);
@@ -44,7 +44,7 @@ const Header = () => {
           $position="absolute"
           $opacity="0.6"
           $AnimationK={AddAnimation}
-          $animation_delay="1s"
+          style={{ animationDelay: "1s" }}
         ></Polygon>
         <PolygonObj></PolygonObj>
         <Avatar

@@ -123,7 +123,7 @@ const AreaEffectPolygons = styled.ul`
   width: 100dvw;
   height: 100dvh;
   overflow: hidden;
-  transition: 300ms ease-in;
+  transition: 300ms ease;
 `;
 
 const BackGroundEffect = () => {

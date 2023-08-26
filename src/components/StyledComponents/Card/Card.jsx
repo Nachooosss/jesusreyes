@@ -14,9 +14,9 @@ const CardTemplete = styled.div`
   color: ${(props) => props.theme.color.secundaryLight};
   background-color: ${(props) => props.theme.color.primary};
   opacity: 0.95;
-  transition: 0.8s linear;
+  transition: 300ms linear;
   animation-name: "fadeInLeft";
-  animation-duration: 500ms;
+  animation-duration: 300ms;
   animation-timing-function: forwards;
   @media screen and (min-width: 320px) {
     display: block !important;

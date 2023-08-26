@@ -30,7 +30,7 @@ const PolygonObj = () => {
           <Typed
             className="typedstring"
             strings={textLines}
-            typeSpeed={100}
+            typeSpeed={80}
             backSpeed={20}
             loop
           />

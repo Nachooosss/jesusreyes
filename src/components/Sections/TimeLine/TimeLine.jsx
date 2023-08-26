@@ -29,7 +29,7 @@ export default function CustomizedTimeline() {
                 className="context"
                 style={{
                   color: theme.color.primary,
-                  animationDuration: "500ms",
+                  animationDuration: "300ms",
                   animationName: "fadeInRight",
                 }}
                 sx={{
@@ -44,7 +44,7 @@ export default function CustomizedTimeline() {
                 <TimelineConnector
                   sx={{ bgcolor: theme.color.primary }}
                   style={{
-                    animationDuration: "500ms",
+                    animationDuration: "300ms",
                     animationName: "fadeInRight",
                   }}
                 />
@@ -55,13 +55,13 @@ export default function CustomizedTimeline() {
                   height={"40px"}
                   style={{
                     borderRadius: "100%",
-                    animationDuration: "500ms",
+                    animationDuration: "300ms",
                     animationName: "fadeInLeft",
                   }}
                 />
                 <TimelineConnector
                   style={{
-                    animationDuration: "500ms",
+                    animationDuration: "300ms",
                     animationName: "fadeInRight",
                   }}
                   sx={{ bgcolor: theme.color.primary }}
@@ -69,7 +69,7 @@ export default function CustomizedTimeline() {
               </TimelineSeparator>
               <TimelineContent
                 style={{
-                  animationDuration: "500ms",
+                  animationDuration: "300ms",
                   animationName: "fadeInLeft",
                 }}
               >

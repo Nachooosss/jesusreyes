@@ -38,7 +38,7 @@ const GalleryImg = styled.div`
   color: ${(props) => props.theme.color.secundaryLight};
   background-color: ${(props) => props.theme.color.primary};
   z-index: 0;
-  transition: all 600ms ease-in-out;
+  transition: all 400ms ease;
   background-blend-mode: overlay;
   background-image: url(${(p) => (p.$src ? p.$src : "")});
   background-repeat: no-repeat;

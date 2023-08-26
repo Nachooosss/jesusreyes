@@ -13,7 +13,7 @@ const Logo = styled.div`
   cursor: pointer;
   &:hover {
     filter: drop-shadow(7px 7px 2px ${(props) => props.theme.color.shadows});
-    animation: tada 2s infinite;
+    animation: tada 1s infinite;
   }
 `;
 const Img = () => {

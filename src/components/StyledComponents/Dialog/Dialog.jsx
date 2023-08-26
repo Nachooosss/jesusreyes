@@ -10,8 +10,8 @@ const DialogTemplate = styled.div`
   position: fixed;
   align-items: center;
   justify-content: center;
-  transition: all 1s ease-in-out;
-  animation-duration: 0.9s;
+  transition: all 500ms ease;
+  animation-duration: 500ms;
   animation-iteration-count: 1;
   top: 0;
   left: 0;

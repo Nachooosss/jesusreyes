@@ -21,7 +21,7 @@ const Section = styled.div`
   padding: 0;
   background-color: transparent;
   color: ${(props) => props.theme.color.secundaryLight};
-  transition: 1s linear;
+  transition: 300ms ease;
 `;
 const AnimationSection = styled.div`
   display: flex;
@@ -34,8 +34,8 @@ const AnimationSection = styled.div`
   overflow-x: hidden;
   overflow-y: auto;
   background-color: transparent;
-  transition: 1s linear;
-  animation-duration: 500ms;
+  transition: 300ms ease;
+  animation-duration: 300ms;
 `;
 const Components = [
   { type: Header, path: "/jesusreyes/" },

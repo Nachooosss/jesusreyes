@@ -10,7 +10,7 @@ const Avatar = styled.div`
   -moz-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   animation-name: "fadeInRight";
-  animation-duration: 500ms;
+  animation-duration: 300ms;
   &:hover {
     ${(p) => (p.$hoverActive ? ImgOR : ImgIA)};
   }

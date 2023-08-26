@@ -10,7 +10,8 @@ const Gallery = styled.ul`
   display: grid;
   margin: 0 auto;
   @media screen and (min-width: 320px) {
-    grid-template-columns: repeat(2, 120px);
+    grid-template-columns: repeat(4, 50px);
+    grid-auto-rows: 75px;
     gap: 3px;
   }
   @media screen and (min-width: 720px) {
@@ -28,7 +29,7 @@ const GalleryItem = styled.li`
   display: flex;
   background-color: ${(props) => props.theme.color.primary};
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  transition: all 500ms ease-in-out;
+  transition: all 300ms ease-in-out;
   cursor: pointer;
   background-blend-mode: multiply;
 
@@ -42,34 +43,30 @@ const GalleryItem = styled.li`
     z-index: 2;
   }
   @media screen and (min-width: 320px) {
-    height: 120px;
-    width: 120px;
-    grid-column: span 1;
+    height: 100px;
+    width: 100px;
+    grid-column: span 2;
     &:nth-child(11n + 1) {
-      grid-column: span 1;
+      grid-column: 2 / span 2;
     }
-    &:nth-child(11n + 3) {
-      grid-column: span 1;
+    &:nth-child(11n + 4) {
+      grid-column: 2 / span 2;
     }
-    &:nth-child(11n + 6) {
-      grid-column: span 1;
+    &:nth-child(11n + 7) {
+      grid-column: 2 / span 2;
     }
   }
   @media screen and (min-width: 720px) {
     height: 200px;
     width: 200px;
-    grid-column: span 2;
-    &:nth-child(11n + 1) {
-      grid-column: 2 / span 2;
-    }
-    &:nth-child(11n + 2) {
-      grid-column: 4 / span 3;
-    }
-    &:nth-child(11n + 3) {
+    &:nth-child(11n + 4) {
       grid-column: span 2;
     }
     &:nth-child(11n + 6) {
       grid-column: 2 / span 2;
+    }
+    &:nth-child(11n + 7) {
+      grid-column: span 2;
     }
   }
 
@@ -95,7 +92,7 @@ const Skills = () => {
     <>
       <Gallery
         style={{
-          animationDuration: "500ms",
+          animationDuration: "300ms",
           animationName: "fadeInLeft",
         }}
       >
